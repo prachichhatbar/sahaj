@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Bank</title>
+  </head>
+  <body>
+    <h1>Payment Bank</h1>
+    <div>
+      <label>Account Holder Name:</label>
+      <input type="text" id="accountHolderName">
+      <button onclick="createAccount()">Create Account</button>
+    </div>
+    <br>
+    <div>
+      <label>Account Number:</label>
+      <input type="text" id="accountNumber">
+      <button onclick="checkBalance()">Check Balance</button>
+    </div>
+    <br>
+    <div>
+      <label>Account Number:</label>
+      <input type="text" id="depositAccountNumber">
+      <label>Deposit Amount:</label>
+      <input type="number" id="depositAmount" min="500" max="50000">
+      <button onclick="deposit()">Deposit</button>
+    </div>
+    <br>
+    <div>
+      <label>Account Number:</label>
+      <input type="text" id="withdrawAccountNumber">
+      <label>Withdrawal Amount:</label>
+      <input type="number" id="withdrawalAmount" min="1000" max="25000">
+      <button onclick="withdraw()">Withdraw</button>
+    </div>
+    <br>
+    <div>
+      <label>Source Account Number:</label>
+      <input type="text" id="sourceAccountNumber">
+      <label>Target Account Number:</label>
+      <input type="text" id="targetAccountNumber">
+      <label>Transfer Amount:</label>
+      <input type="number" id="transferAmount" min="1000" max="25000">
+      <button onclick="transfer()">Transfer</button>
+    </div>
+    <br>
+    <div id="output"></div>
+    <script src="banking-system.js"></script>
+  </body>
+</html>
